@@ -1,0 +1,665 @@
+2023/08/25 12:34:43 Server starting on port 7070
+2023/08/25 12:34:43 Got node list from master: [
+2023/08/25 12:34:43 10.10.1.1:7070
+2023/08/25 12:34:43 , 
+2023/08/25 12:34:43 10.10.1.2:7070
+2023/08/25 12:34:43 , 
+2023/08/25 12:34:43 10.10.1.3:7070
+2023/08/25 12:34:43 ]
+2023/08/25 12:34:43 Starting Gryff replica...
+2023/08/25 12:34:43 rpc.Register: method "CompleteRead" has 5 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: method "CompleteWrite" has 4 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: method "ConnectToPeers" has 1 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: method "ConnectToPeersNoListeners" has 1 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: reply type of method "DelayRPC" is not a pointer: "uint8"
+2023/08/25 12:34:43 rpc.Register: method "Finish" has 1 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: method "GetClientWriter" has 2 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: method "GetCurrentValue" has 2 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: method "GetReplicasByRank" has 1 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: method "GetStats" has 1 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: method "GetStoreMetadata" has 2 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: method "HandleOverwrite" has 4 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: method "HandleWrite1Overwrite" has 0 output parameters; needs exactly one
+2023/08/25 12:34:43 rpc.Register: method "NeedsWaitForExecute" has 2 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: reply type of method "Printf" is not a pointer: "[]interface {}"
+2023/08/25 12:34:43 rpc.Register: method "RegisterClientRPC" has 4 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: reply type of method "RegisterRPC" is not a pointer: "chan fastrpc.Serializable"
+2023/08/25 12:34:43 rpc.Register: method "ReplyBeacon" has 2 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: method "ReplyPropose" has 0 output parameters; needs exactly one
+2023/08/25 12:34:43 rpc.Register: method "ReplyProposeTS" has 0 output parameters; needs exactly one
+2023/08/25 12:34:43 rpc.Register: method "SendBeacon" has 2 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: method "SendMsg" has 4 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: method "SendMsgNoFlush" has 4 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: reply type of method "SendRead1" is not a pointer: "[]int32"
+2023/08/25 12:34:43 rpc.Register: reply type of method "SendRead2" is not a pointer: "[]int32"
+2023/08/25 12:34:43 rpc.Register: reply type of method "SendWrite1" is not a pointer: "[]int32"
+2023/08/25 12:34:43 rpc.Register: method "SendWrite1Timeout" has 2 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: reply type of method "SendWrite2" is not a pointer: "[]int32"
+2023/08/25 12:34:43 rpc.Register: method "SendWrite2ConcurrentTimeout" has 2 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: reply type of method "SetCurrentValue" is not a pointer: "state.Value"
+2023/08/25 12:34:43 rpc.Register: method "SetForceWrite" has 1 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: reply type of method "ShouldDelayNextRPC" is not a pointer: "uint8"
+2023/08/25 12:34:43 rpc.Register: method "SlowClock" has 2 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: method "StopAdapting" has 1 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: method "TagSeen" has 2 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: reply type of method "UndelayRPCs" is not a pointer: "uint8"
+2023/08/25 12:34:43 rpc.Register: method "UpdatePreferredPeerOrder" has 2 input parameters; needs exactly three
+2023/08/25 12:34:43 rpc.Register: method "WaitForClientConnections" has 1 input parameters; needs exactly three
+2023/08/25 12:34:43 Listening for RPCs on port 8070
+2023/08/25 12:34:43 Beginning to connect to peers...
+2023/08/25 12:34:43 Dialing peer 0 with addr 10.10.1.1:7070
+2023/08/25 12:34:43 Listening for peers on :7070
+2023/08/25 12:34:43 Error dialing peer 0: dial tcp 10.10.1.1:7070: connect: connection refused
+2023/08/25 12:34:44 Dialing peer 0 with addr 10.10.1.1:7070
+2023/08/25 12:34:45 Sending my id 2 to peer 0
+2023/08/25 12:34:45 Dialing peer 1 with addr 10.10.1.2:7070
+2023/08/25 12:34:45 Sending my id 2 to peer 1
+2023/08/25 12:34:45 Replica id: 2. Done connecting to peers
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40810
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40822
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40826
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40842
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40854
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40868
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40870
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40878
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40880
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40892
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40898
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40902
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40908
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40918
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40928
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40932
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40934
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40938
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40946
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40948
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40954
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40956
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40958
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40960
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40974
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40988
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:40996
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41000
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41012
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41020
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41036
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41046
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41050
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41058
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41072
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41082
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41084
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41090
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41096
+2023/08/25 12:34:48 Received Ping from client 52
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41110
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41124
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41134
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41136
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41142
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41160
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41156
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41172
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41186
+2023/08/25 12:34:48 Received Ping from client 47
+2023/08/25 12:34:48 Received Ping from client 12
+2023/08/25 12:34:48 Received Ping from client 44
+2023/08/25 12:34:48 Received Ping from client 3
+2023/08/25 12:34:48 Received Ping from client 9
+2023/08/25 12:34:48 Received Ping from client 63
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41202
+2023/08/25 12:34:48 Received Ping from client 51
+2023/08/25 12:34:48 Received Ping from client 5
+2023/08/25 12:34:48 Received Ping from client 1
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41210
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41224
+2023/08/25 12:34:48 Received Ping from client 58
+2023/08/25 12:34:48 Received Ping from client 54
+2023/08/25 12:34:48 Received Ping from client 10
+2023/08/25 12:34:48 Received Ping from client 25
+2023/08/25 12:34:48 Received Ping from client 42
+2023/08/25 12:34:48 Received Ping from client 62
+2023/08/25 12:34:48 Received Ping from client 60
+2023/08/25 12:34:48 Received Ping from client 21
+2023/08/25 12:34:48 Received Ping from client 22
+2023/08/25 12:34:48 Received Ping from client 6
+2023/08/25 12:34:48 Received Ping from client 53
+2023/08/25 12:34:48 Received Ping from client 64
+2023/08/25 12:34:48 Received Ping from client 45
+2023/08/25 12:34:48 Received Ping from client 48
+2023/08/25 12:34:48 Received Ping from client 57
+2023/08/25 12:34:48 Received Ping from client 59
+2023/08/25 12:34:48 Received Ping from client 20
+2023/08/25 12:34:48 Received Ping from client 23
+2023/08/25 12:34:48 Received Ping from client 4
+2023/08/25 12:34:48 Received Ping from client 49
+2023/08/25 12:34:48 Received Ping from client 24
+2023/08/25 12:34:48 Received Ping from client 55
+2023/08/25 12:34:48 Received Ping from client 8
+2023/08/25 12:34:48 Received Ping from client 79
+2023/08/25 12:34:48 Received Ping from client 43
+2023/08/25 12:34:48 Received Ping from client 16
+2023/08/25 12:34:48 Received Ping from client 0
+2023/08/25 12:34:48 Received Ping from client 18
+2023/08/25 12:34:48 Received Ping from client 65
+2023/08/25 12:34:48 Received Ping from client 50
+2023/08/25 12:34:48 Received Ping from client 46
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41228
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41236
+2023/08/25 12:34:48 Received Ping from client 17
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41244
+2023/08/25 12:34:48 Received Ping from client 14
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41250
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41262
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41268
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41276
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41278
+2023/08/25 12:34:48 Received Ping from client 15
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41286
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41300
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41308
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41318
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41328
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41332
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41342
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41344
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41356
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41366
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41380
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41390
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41362
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41396
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41406
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41424
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41414
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41426
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41438
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41460
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41452
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41466
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41482
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41484
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41494
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41502
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41512
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41508
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41528
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41534
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41550
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41564
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41566
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41580
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41582
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41594
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41604
+2023/08/25 12:34:48 Received Ping from client 56
+2023/08/25 12:34:48 Received Ping from client 19
+2023/08/25 12:34:48 Received Ping from client 7
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41612
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41626
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41630
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41642
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41658
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41666
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41672
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41688
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41694
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41710
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41718
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41724
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41728
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41738
+2023/08/25 12:34:48 Received Ping from client 11
+2023/08/25 12:34:48 Received Ping from client 40
+2023/08/25 12:34:48 Received Ping from client 86
+2023/08/25 12:34:48 Received Ping from client 81
+2023/08/25 12:34:48 Received Ping from client 61
+2023/08/25 12:34:48 Received Ping from client 66
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41750
+2023/08/25 12:34:48 Received Ping from client 27
+2023/08/25 12:34:48 Received Ping from client 95
+2023/08/25 12:34:48 Received Ping from client 89
+2023/08/25 12:34:48 Received Ping from client 82
+2023/08/25 12:34:48 Received Ping from client 35
+2023/08/25 12:34:48 Received Ping from client 98
+2023/08/25 12:34:48 Received Ping from client 84
+2023/08/25 12:34:48 Received Ping from client 31
+2023/08/25 12:34:48 Received Ping from client 83
+2023/08/25 12:34:48 Received Ping from client 92
+2023/08/25 12:34:48 Received Ping from client 33
+2023/08/25 12:34:48 Received Ping from client 90
+2023/08/25 12:34:48 Received Ping from client 94
+2023/08/25 12:34:48 Received Ping from client 74
+2023/08/25 12:34:48 Received Ping from client 96
+2023/08/25 12:34:48 Received Ping from client 97
+2023/08/25 12:34:48 Received Ping from client 37
+2023/08/25 12:34:48 Received Ping from client 299
+2023/08/25 12:34:48 Received Ping from client 78
+2023/08/25 12:34:48 Received Ping from client 88
+2023/08/25 12:34:48 Received Ping from client 67
+2023/08/25 12:34:48 Received Ping from client 32
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41758
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41768
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41784
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41776
+2023/08/25 12:34:48 Received Ping from client 72
+2023/08/25 12:34:48 Received Ping from client 13
+2023/08/25 12:34:48 Received Ping from client 77
+2023/08/25 12:34:48 Received Ping from client 112
+2023/08/25 12:34:48 Received Ping from client 80
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41788
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41800
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41802
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41818
+2023/08/25 12:34:48 Received Ping from client 28
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41832
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41842
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41844
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41856
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41860
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41876
+2023/08/25 12:34:48 Received Ping from client 75
+2023/08/25 12:34:48 Received Ping from client 85
+2023/08/25 12:34:48 Received Ping from client 87
+2023/08/25 12:34:48 Received Ping from client 2
+2023/08/25 12:34:48 Received Ping from client 36
+2023/08/25 12:34:48 Received Ping from client 38
+2023/08/25 12:34:48 Received Ping from client 70
+2023/08/25 12:34:48 Received Ping from client 39
+2023/08/25 12:34:48 Received Ping from client 73
+2023/08/25 12:34:48 Received Ping from client 30
+2023/08/25 12:34:48 Received Ping from client 26
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41882
+2023/08/25 12:34:48 Received Ping from client 123
+2023/08/25 12:34:48 Received Ping from client 103
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41894
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41898
+2023/08/25 12:34:48 Received Ping from client 104
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41906
+2023/08/25 12:34:48 Received Ping from client 34
+2023/08/25 12:34:48 Received Ping from client 91
+2023/08/25 12:34:48 Received Ping from client 41
+2023/08/25 12:34:48 Received Ping from client 69
+2023/08/25 12:34:48 Received Ping from client 29
+2023/08/25 12:34:48 Received Ping from client 93
+2023/08/25 12:34:48 Received Ping from client 68
+2023/08/25 12:34:48 Received Ping from client 105
+2023/08/25 12:34:48 Received Ping from client 106
+2023/08/25 12:34:48 Received Ping from client 107
+2023/08/25 12:34:48 Received Ping from client 101
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41920
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41930
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41934
+2023/08/25 12:34:48 Received Ping from client 71
+2023/08/25 12:34:48 Received Ping from client 100
+2023/08/25 12:34:48 Received Ping from client 109
+2023/08/25 12:34:48 Received Ping from client 102
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41936
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41948
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41958
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41974
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41982
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:41994
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42010
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42016
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42028
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42034
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42044
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42060
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42064
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42080
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42092
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42104
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42118
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42132
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42134
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42150
+2023/08/25 12:34:48 Received Ping from client 148
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42152
+2023/08/25 12:34:48 Received Ping from client 122
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42166
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42172
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42188
+2023/08/25 12:34:48 Received Ping from client 126
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42196
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42204
+2023/08/25 12:34:48 Received Ping from client 113
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42206
+2023/08/25 12:34:48 Received Ping from client 150
+2023/08/25 12:34:48 Received Ping from client 121
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42222
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42216
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42234
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42248
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42262
+2023/08/25 12:34:48 Received Ping from client 119
+2023/08/25 12:34:48 Received Ping from client 132
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42278
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42282
+2023/08/25 12:34:48 Received Ping from client 110
+2023/08/25 12:34:48 Received Ping from client 76
+2023/08/25 12:34:48 Received Ping from client 111
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42288
+2023/08/25 12:34:48 Received Ping from client 136
+2023/08/25 12:34:48 Received Ping from client 128
+2023/08/25 12:34:48 Received Ping from client 99
+2023/08/25 12:34:48 Received Ping from client 114
+2023/08/25 12:34:48 Received Ping from client 127
+2023/08/25 12:34:48 Received Ping from client 129
+2023/08/25 12:34:48 Received Ping from client 115
+2023/08/25 12:34:48 Received Ping from client 143
+2023/08/25 12:34:48 Received Ping from client 134
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42294
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42310
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42318
+2023/08/25 12:34:48 Received Ping from client 117
+2023/08/25 12:34:48 Received Ping from client 124
+2023/08/25 12:34:48 Received Ping from client 108
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42330
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42334
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42348
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42364
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42380
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42382
+2023/08/25 12:34:48 Received Ping from client 131
+2023/08/25 12:34:48 Received Ping from client 118
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42398
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42400
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42412
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42420
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42430
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42442
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42448
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42456
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42476
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42470
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42478
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42488
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42486
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42496
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42508
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42502
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42514
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42526
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42540
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42546
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42554
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42572
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42556
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42574
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42586
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42600
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42610
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42618
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42634
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42638
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42646
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42658
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42674
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42660
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42686
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42710
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42698
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42722
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42736
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42748
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42750
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42760
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42774
+2023/08/25 12:34:48 Received Ping from client 158
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42780
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42782
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42798
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42802
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42812
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42808
+2023/08/25 12:34:48 Received Ping from client 154
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42820
+2023/08/25 12:34:48 Received Ping from client 130
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42828
+2023/08/25 12:34:48 Received Ping from client 147
+2023/08/25 12:34:48 Received Ping from client 155
+2023/08/25 12:34:48 Received Ping from client 139
+2023/08/25 12:34:48 Received Ping from client 183
+2023/08/25 12:34:48 Received Ping from client 120
+2023/08/25 12:34:48 Received Ping from client 156
+2023/08/25 12:34:48 Received Ping from client 230
+2023/08/25 12:34:48 Received Ping from client 135
+2023/08/25 12:34:48 Received Ping from client 146
+2023/08/25 12:34:48 Received Ping from client 142
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42832
+2023/08/25 12:34:48 Received Ping from client 204
+2023/08/25 12:34:48 Received Ping from client 138
+2023/08/25 12:34:48 Received Ping from client 201
+2023/08/25 12:34:48 Received Ping from client 188
+2023/08/25 12:34:48 Received Ping from client 133
+2023/08/25 12:34:48 Received Ping from client 140
+2023/08/25 12:34:48 Received Ping from client 141
+2023/08/25 12:34:48 Received Ping from client 137
+2023/08/25 12:34:48 Received Ping from client 149
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42848
+2023/08/25 12:34:48 Received Ping from client 151
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42860
+2023/08/25 12:34:48 Received Ping from client 153
+2023/08/25 12:34:48 Received Ping from client 125
+2023/08/25 12:34:48 Received Ping from client 157
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42866
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42878
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42880
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42888
+2023/08/25 12:34:48 Received Ping from client 195
+2023/08/25 12:34:48 Received Ping from client 164
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42894
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42932
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42912
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42924
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42898
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42918
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42942
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42954
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42968
+2023/08/25 12:34:48 Received Ping from client 152
+2023/08/25 12:34:48 Received Ping from client 179
+2023/08/25 12:34:48 Received Ping from client 145
+2023/08/25 12:34:48 Received Ping from client 182
+2023/08/25 12:34:48 Received Ping from client 116
+2023/08/25 12:34:48 Received Ping from client 269
+2023/08/25 12:34:48 Received Ping from client 144
+2023/08/25 12:34:48 Received Ping from client 189
+2023/08/25 12:34:48 Received Ping from client 161
+2023/08/25 12:34:48 Received Ping from client 218
+2023/08/25 12:34:48 Received Ping from client 190
+2023/08/25 12:34:48 Received Ping from client 268
+2023/08/25 12:34:48 Received Ping from client 225
+2023/08/25 12:34:48 Received Ping from client 222
+2023/08/25 12:34:48 Received Ping from client 187
+2023/08/25 12:34:48 Received Ping from client 235
+2023/08/25 12:34:48 Received Ping from client 224
+2023/08/25 12:34:48 Received Ping from client 168
+2023/08/25 12:34:48 Received Ping from client 196
+2023/08/25 12:34:48 Received Ping from client 288
+2023/08/25 12:34:48 Received Ping from client 220
+2023/08/25 12:34:48 Received Ping from client 202
+2023/08/25 12:34:48 Received Ping from client 185
+2023/08/25 12:34:48 Received Ping from client 181
+2023/08/25 12:34:48 Received Ping from client 192
+2023/08/25 12:34:48 Received Ping from client 210
+2023/08/25 12:34:48 Received Ping from client 240
+2023/08/25 12:34:48 Received Ping from client 193
+2023/08/25 12:34:48 Received Ping from client 212
+2023/08/25 12:34:48 Received Ping from client 250
+2023/08/25 12:34:48 Received Ping from client 163
+2023/08/25 12:34:48 Received Ping from client 261
+2023/08/25 12:34:48 Received Ping from client 178
+2023/08/25 12:34:48 Received Ping from client 255
+2023/08/25 12:34:48 Received Ping from client 290
+2023/08/25 12:34:48 Received Ping from client 248
+2023/08/25 12:34:48 Received Ping from client 263
+2023/08/25 12:34:48 Received Ping from client 213
+2023/08/25 12:34:48 Received Ping from client 208
+2023/08/25 12:34:48 Received Ping from client 200
+2023/08/25 12:34:48 Received Ping from client 211
+2023/08/25 12:34:48 Received Ping from client 239
+2023/08/25 12:34:48 Received Ping from client 221
+2023/08/25 12:34:48 Received Ping from client 180
+2023/08/25 12:34:48 Received Ping from client 205
+2023/08/25 12:34:48 Received Ping from client 160
+2023/08/25 12:34:48 Received Ping from client 217
+2023/08/25 12:34:48 Received Ping from client 207
+2023/08/25 12:34:48 Received Ping from client 203
+2023/08/25 12:34:48 Received Ping from client 166
+2023/08/25 12:34:48 Received Ping from client 232
+2023/08/25 12:34:48 Received Ping from client 175
+2023/08/25 12:34:48 Received Ping from client 209
+2023/08/25 12:34:48 Received Ping from client 214
+2023/08/25 12:34:48 Received Ping from client 199
+2023/08/25 12:34:48 Received Ping from client 219
+2023/08/25 12:34:48 Received Ping from client 215
+2023/08/25 12:34:48 Received Ping from client 233
+2023/08/25 12:34:48 Received Ping from client 223
+2023/08/25 12:34:48 Received Ping from client 270
+2023/08/25 12:34:48 Received Ping from client 177
+2023/08/25 12:34:48 Received Ping from client 246
+2023/08/25 12:34:48 Received Ping from client 162
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42972
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42974
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42976
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43000
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:42984
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43018
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43016
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43020
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43026
+2023/08/25 12:34:48 Received Ping from client 236
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43032
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43058
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43048
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43072
+2023/08/25 12:34:48 Received Ping from client 280
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43082
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43092
+2023/08/25 12:34:48 Received Ping from client 281
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43100
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43112
+2023/08/25 12:34:48 Received Ping from client 251
+2023/08/25 12:34:48 Received Ping from client 276
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43126
+2023/08/25 12:34:48 Received Ping from client 277
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43136
+2023/08/25 12:34:48 Received Ping from client 274
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43140
+2023/08/25 12:34:48 Received Ping from client 272
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43156
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43166
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43174
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43180
+2023/08/25 12:34:48 Received Ping from client 242
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43188
+2023/08/25 12:34:48 Received Ping from client 238
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43196
+2023/08/25 12:34:48 Received Ping from client 237
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43202
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43216
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43224
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43236
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43242
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43244
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43254
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43256
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43262
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43274
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43288
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43294
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43300
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43314
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43320
+2023/08/25 12:34:48 Received Ping from client 275
+2023/08/25 12:34:48 Received Ping from client 273
+2023/08/25 12:34:48 Received Ping from client 228
+2023/08/25 12:34:48 Received Ping from client 278
+2023/08/25 12:34:48 Received Ping from client 243
+2023/08/25 12:34:48 Received Ping from client 262
+2023/08/25 12:34:48 Received Ping from client 271
+2023/08/25 12:34:48 Received Ping from client 170
+2023/08/25 12:34:48 Received Ping from client 265
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43336
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43344
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43348
+2023/08/25 12:34:48 Received Ping from client 254
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43358
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43374
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43390
+2023/08/25 12:34:48 Received Ping from client 297
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43396
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43408
+2023/08/25 12:34:48 Received Ping from client 266
+2023/08/25 12:34:48 Received Ping from client 173
+2023/08/25 12:34:48 Received Ping from client 174
+2023/08/25 12:34:48 Received Ping from client 191
+2023/08/25 12:34:48 Received Ping from client 184
+2023/08/25 12:34:48 Accepted client connection 10.10.1.6:43424
+2023/08/25 12:34:48 Received Ping from client 198
+2023/08/25 12:34:48 Received Ping from client 197
+2023/08/25 12:34:48 Received Ping from client 241
+2023/08/25 12:34:48 Received Ping from client 206
+2023/08/25 12:34:48 Received Ping from client 258
+2023/08/25 12:34:48 Received Ping from client 194
+2023/08/25 12:34:49 Received Ping from client 285
+2023/08/25 12:34:49 Received Ping from client 234
+2023/08/25 12:34:49 Received Ping from client 267
+2023/08/25 12:34:49 Received Ping from client 249
+2023/08/25 12:34:49 Received Ping from client 252
+2023/08/25 12:34:49 Received Ping from client 294
+2023/08/25 12:34:49 Received Ping from client 257
+2023/08/25 12:34:49 Received Ping from client 291
+2023/08/25 12:34:49 Received Ping from client 282
+2023/08/25 12:34:49 Received Ping from client 260
+2023/08/25 12:34:49 Accepted client connection 10.10.1.6:43426
+2023/08/25 12:34:49 Accepted client connection 10.10.1.6:43432
+2023/08/25 12:34:49 Accepted client connection 10.10.1.6:43448
+2023/08/25 12:34:49 Accepted client connection 10.10.1.6:43458
+2023/08/25 12:34:49 Accepted client connection 10.10.1.6:43460
+2023/08/25 12:34:49 Received Ping from client 295
+2023/08/25 12:34:49 Received Ping from client 293
+2023/08/25 12:34:49 Received Ping from client 289
+2023/08/25 12:34:49 Received Ping from client 296
+2023/08/25 12:34:49 Accepted client connection 10.10.1.6:43462
+2023/08/25 12:34:49 Received Ping from client 171
+2023/08/25 12:34:49 Received Ping from client 279
+2023/08/25 12:34:49 Received Ping from client 172
+2023/08/25 12:34:49 Received Ping from client 229
+2023/08/25 12:34:49 Received Ping from client 247
+2023/08/25 12:34:49 Received Ping from client 287
+2023/08/25 12:34:49 Received Ping from client 284
+2023/08/25 12:34:49 Accepted client connection 10.10.1.6:43472
+2023/08/25 12:34:49 Received Ping from client 286
+2023/08/25 12:34:49 Received Ping from client 159
+2023/08/25 12:34:49 Received Ping from client 176
+2023/08/25 12:34:49 Received Ping from client 216
+2023/08/25 12:34:49 Received Ping from client 231
+2023/08/25 12:34:49 Received Ping from client 167
+2023/08/25 12:34:49 Received Ping from client 165
+2023/08/25 12:34:49 Received Ping from client 283
+2023/08/25 12:34:49 Received Ping from client 244
+2023/08/25 12:34:49 Received Ping from client 256
+2023/08/25 12:34:49 Received Ping from client 253
+2023/08/25 12:34:49 Received Ping from client 186
+2023/08/25 12:34:49 Received Ping from client 298
+2023/08/25 12:34:49 Received Ping from client 259
+2023/08/25 12:34:49 Received Ping from client 264
+2023/08/25 12:34:49 Received Ping from client 226
+2023/08/25 12:34:49 Received Ping from client 169
+2023/08/25 12:34:49 Received Ping from client 227
+2023/08/25 12:34:49 Received Ping from client 245
+2023/08/25 12:34:49 Received Ping from client 292
+2023/08/25 12:37:48 Error reading opcode from client: read tcp 10.10.1.3:7070->10.10.1.6:43348: read: connection reset by peer
+2023/08/25 12:37:48 Error reading opcode from client: read tcp 10.10.1.3:7070->10.10.1.6:43236: read: connection reset by peer
+2023/08/25 12:37:48 Error reading opcode from client: read tcp 10.10.1.3:7070->10.10.1.6:42976: read: connection reset by peer
+2023/08/25 12:37:48 Error reading opcode from client: read tcp 10.10.1.3:7070->10.10.1.6:42412: read: connection reset by peer
+2023/08/25 12:37:48 Error reading opcode from client: read tcp 10.10.1.3:7070->10.10.1.6:42348: read: connection reset by peer
+2023/08/25 12:37:48 Error reading opcode from client: read tcp 10.10.1.3:7070->10.10.1.6:42248: read: connection reset by peer
+2023/08/25 12:37:48 Error reading opcode from client: read tcp 10.10.1.3:7070->10.10.1.6:42262: read: connection reset by peer
+2023/08/25 12:37:48 Error reading opcode from client: read tcp 10.10.1.3:7070->10.10.1.6:41528: read: connection reset by peer

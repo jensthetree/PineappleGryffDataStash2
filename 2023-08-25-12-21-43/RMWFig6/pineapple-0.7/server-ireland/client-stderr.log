@@ -1,0 +1,48 @@
+2023/08/25 12:47:39 Connected to node:  10.10.1.3
+2023/08/25 12:47:39 Connected to node:  10.10.1.3
+2023/08/25 12:47:39 Connected to node:  10.10.1.3
+2023/08/25 12:47:40 Connected to node:  10.10.1.3
+2023/08/25 12:47:40 Connected to node:  10.10.1.3
+2023/08/25 12:47:40 Connected to node:  10.10.1.3
+2023/08/25 12:47:40 Connected to node:  10.10.1.3
+2023/08/25 12:47:40 Connected to node:  10.10.1.3
+2023/08/25 12:47:40 Connected to node:  10.10.1.3
+2023/08/25 12:47:41 Connected to node:  10.10.1.3
+2023/08/25 12:47:41 Connected to node:  10.10.1.3
+2023/08/25 12:47:41 Connected to node:  10.10.1.3
+2023/08/25 12:47:41 Connected to node:  10.10.1.3
+2023/08/25 12:47:41 Connected to node:  10.10.1.3
+2023/08/25 12:47:41 Connected to node:  10.10.1.3
+2023/08/25 12:47:41 Connected to node:  10.10.1.3
+2023/08/25 12:47:42 Connected to node:  10.10.1.3
+2023/08/25 12:47:42 Connected to node:  10.10.1.3
+2023/08/25 12:47:42 Connected to node:  10.10.1.3
+2023/08/25 12:47:42 Connected to node:  10.10.1.3
+2023/08/25 12:47:42 Connected to node:  10.10.1.3
+2023/08/25 12:47:42 Connected to node:  10.10.1.3
+2023/08/25 12:47:43 Connected to node:  10.10.1.3
+2023/08/25 12:47:43 Connected to node:  10.10.1.3
+2023/08/25 12:47:43 Connected to node:  10.10.1.3
+2023/08/25 12:47:43 Connected to node:  10.10.1.3
+2023/08/25 12:47:43 Connected to node:  10.10.1.3
+2023/08/25 12:47:43 Connected to node:  10.10.1.3
+2023/08/25 12:47:43 Connected to node:  10.10.1.3
+2023/08/25 12:47:44 Connected to node:  10.10.1.3
+2023/08/25 12:47:44 Connected to node:  10.10.1.3
+2023/08/25 12:47:44 Connected to node:  10.10.1.3
+2023/08/25 12:47:44 Connected to node:  10.10.1.3
+2023/08/25 12:47:44 Connected to node:  10.10.1.3
+2023/08/25 12:47:44 Connected to node:  10.10.1.3
+2023/08/25 12:47:44 Connected to node:  10.10.1.3
+2023/08/25 12:47:45 Connected to node:  10.10.1.3
+2023/08/25 12:47:45 Connected to node:  10.10.1.3
+2023/08/25 12:47:45 Connected to node:  10.10.1.3
+2023/08/25 12:47:45 Connected to node:  10.10.1.3
+2023/08/25 12:47:45 Connected to node:  10.10.1.3
+2023/08/25 12:47:45 Connected to node:  10.10.1.3
+2023/08/25 12:47:46 Connected to node:  10.10.1.3
+2023/08/25 12:47:46 Connected to node:  10.10.1.3
+2023/08/25 12:49:45 Error during unmarshaling: read tcp 10.10.1.3:58810->10.10.1.1:7070: read: connection reset by peer
+2023/08/25 12:49:45 0
+2023/08/25 12:49:45 0
+2023/08/25 12:49:55 Error connecting to replica 10.10.1.1:7070

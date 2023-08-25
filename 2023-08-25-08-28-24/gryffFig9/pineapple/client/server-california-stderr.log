@@ -1,0 +1,20 @@
+2023/08/25 08:28:37 Server starting on port 7070
+2023/08/25 08:28:38 Starting Pineapple replica...
+2023/08/25 08:28:38 rpc.Register: method "ConnectToPeers" has 1 input parameters; needs exactly three
+2023/08/25 08:28:38 rpc.Register: method "ConnectToPeersNoListeners" has 1 input parameters; needs exactly three
+2023/08/25 08:28:38 rpc.Register: reply type of method "RegisterRPC" is not a pointer: "chan fastrpc.Serializable"
+2023/08/25 08:28:38 rpc.Register: method "ReplyBeacon" has 2 input parameters; needs exactly three
+2023/08/25 08:28:38 rpc.Register: method "ReplyPropose" has 0 output parameters; needs exactly one
+2023/08/25 08:28:38 rpc.Register: method "ReplyProposeTS" has 0 output parameters; needs exactly one
+2023/08/25 08:28:38 rpc.Register: method "Run" has 1 input parameters; needs exactly three
+2023/08/25 08:28:38 rpc.Register: method "SendBeacon" has 2 input parameters; needs exactly three
+2023/08/25 08:28:38 rpc.Register: method "SendMsg" has 4 input parameters; needs exactly three
+2023/08/25 08:28:38 rpc.Register: method "SendMsgNoFlush" has 4 input parameters; needs exactly three
+2023/08/25 08:28:38 rpc.Register: method "UpdatePreferredPeerOrder" has 2 input parameters; needs exactly three
+2023/08/25 08:28:38 rpc.Register: method "WaitForClientConnections" has 1 input parameters; needs exactly three
+2023/08/25 08:28:39 Replica id: 0. Done connecting to peers
+2023/08/25 08:28:39 Waiting for client connections
+2023/08/25 08:31:42 Error when reading from client connection: read tcp 10.10.1.1:7070->10.10.1.1:45142: read: connection reset by peer
+2023/08/25 08:31:42 Error when reading from client connection: read tcp 10.10.1.1:7070->10.10.1.1:45136: read: connection reset by peer
+2023/08/25 08:31:42 Error when reading from client connection: read tcp 10.10.1.1:7070->10.10.1.1:45114: read: connection reset by peer
+2023/08/25 08:31:42 Error when reading from client connection: read tcp 10.10.1.1:7070->10.10.1.1:45118: read: connection reset by peer
